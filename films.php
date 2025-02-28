@@ -33,7 +33,7 @@ Efekt: wykonanie pętli dla wszystkich wierszy pobranych zapytaniem.
 while($row = mysqli_fetch_assoc($r)) {
     echo("<tr>
             <th scope='row'>{$row['film_id']}</th>
-            <td>{$row['title']}</td>
+            <td><a href='film.php?id={$row['film_id']}'>{$row['title']}</a></td>
             <td>{$row['length']} min.</td>
             <td></td>
         </tr>");

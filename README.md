@@ -8,3 +8,15 @@ Zaczynamy. Dzisiaj w planie:
 
 - [x] Wyświetlenie listy filmów: ID, tytuł, czas trwania
 - [ ] Stworzenie strony o szczegółach wybranego filmu, np. opis, obsada itp. ***- na następne zajęcia***
+
+
+## 2025-02-28
+
+Kontynuacja z poprzednich zajeć:
+
+- [ ] Stworzenie strony o szczegółach wybranego filmu, np. opis, obsada itp. Do zrobienia w `film.php`:
+  - [x] Sprawdzenie, czy przesłano ID filmu do wyświetlenia
+  - [x] Pobranie danych o danym filmie z bazy
+  - [x] Wypisanie tytułu, opisu, czasu trwania
+  - [ ] Wyświetlenie obsady - ***na następne zajęcia***: 
+    - [ ] zbudować zapytanie pobierające ID, nazwisko i imię aktora, który jest w obsadzie danego filmu (trzeba będzie użyć zapytania ze złączeniem)
