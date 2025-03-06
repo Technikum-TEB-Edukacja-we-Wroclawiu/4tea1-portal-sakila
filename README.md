@@ -27,3 +27,6 @@ Kontynuacja z poprzednich zajeć:
   - [x] zbudować zapytanie pobierające ID, nazwisko i imię aktora, który jest w obsadzie danego filmu (trzeba będzie użyć zapytania ze złączeniem)
   - [x] wysłać do bazy danych, a potem wyświetlić w formie elementów listy `<ul>`
 - [ ] Strona o aktorze: imię, nazwisko, lista filmów, w których obsadzie się znajduje - ***ćwiczenie do wykonania***
+  - [ ] Sprawdzenie, czy podano ID liczbowe (np. przez `intval`)
+  - [ ] Zapytanie do bazy pobierające informacje o aktorze
+  - [ ] ...
