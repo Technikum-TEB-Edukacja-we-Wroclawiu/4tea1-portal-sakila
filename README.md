@@ -20,3 +20,10 @@ Kontynuacja z poprzednich zajeć:
   - [x] Wypisanie tytułu, opisu, czasu trwania
   - [ ] Wyświetlenie obsady - ***na następne zajęcia***: 
     - [ ] zbudować zapytanie pobierające ID, nazwisko i imię aktora, który jest w obsadzie danego filmu (trzeba będzie użyć zapytania ze złączeniem)
+
+## 2025-03-06
+
+- [x] Wyświetlanie obsady - z poprzednich zajęć
+  - [x] zbudować zapytanie pobierające ID, nazwisko i imię aktora, który jest w obsadzie danego filmu (trzeba będzie użyć zapytania ze złączeniem)
+  - [x] wysłać do bazy danych, a potem wyświetlić w formie elementów listy `<ul>`
+- [ ] Strona o aktorze: imię, nazwisko, lista filmów, w których obsadzie się znajduje - ***ćwiczenie do wykonania***
