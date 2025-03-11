@@ -30,3 +30,9 @@ Kontynuacja z poprzednich zajeć:
   - [ ] Sprawdzenie, czy podano ID liczbowe (np. przez `intval`)
   - [ ] Zapytanie do bazy pobierające informacje o aktorze
   - [ ] ...
+
+## 2025-03-11
+
+- [ ] Strona o aktorze - ***zadanie na ocenę***
+  - [ ] Podstawowe informacje o aktorze - imię i nazwisko
+  - [ ] Filmy, w których aktor brał udział - ich liczba oraz lista nienumerowana zawierająca linki do strony z filmem
