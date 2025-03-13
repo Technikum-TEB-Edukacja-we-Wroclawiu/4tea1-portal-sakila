@@ -36,3 +36,10 @@ Kontynuacja z poprzednich zajeć:
 - [ ] Strona o aktorze - ***zadanie na ocenę***
   - [ ] Podstawowe informacje o aktorze - imię i nazwisko
   - [ ] Filmy, w których aktor brał udział - ich liczba oraz lista nienumerowana zawierająca linki do strony z filmem
+
+
+## 2025-03-13
+
+- [x] Strona o aktorze - dodana do repo
+- [ ] Lista wszystkich aktorów: tabelka z ID, imieniem i nazwiskiem aktora
+- [ ] Na górze strony ze wszystkimi aktorami formularz dodawania nowego aktora: tylko imię i nazwisko (ID nada baza danych automatycznie)
