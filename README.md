@@ -41,5 +41,6 @@ Kontynuacja z poprzednich zajeć:
 ## 2025-03-13
 
 - [x] Strona o aktorze - dodana do repo
-- [ ] Lista wszystkich aktorów: tabelka z ID, imieniem i nazwiskiem aktora
+- [x] Lista wszystkich aktorów: tabelka z ID, imieniem i nazwiskiem aktora
+  - [x] Później: liczba filmów, w których dany aktor grał, pobrana jednym zapytaniem (wraz z podstawowymi danymi)
 - [ ] Na górze strony ze wszystkimi aktorami formularz dodawania nowego aktora: tylko imię i nazwisko (ID nada baza danych automatycznie)
