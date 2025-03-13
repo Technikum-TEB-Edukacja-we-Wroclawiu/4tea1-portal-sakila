@@ -47,6 +47,11 @@ $num_films = mysqli_num_rows($r);
 <body>
     <h1><?= $actor['first_name'] ?> <?= $actor['last_name'] ?></h1>
 
+    <h2>Powiązanie z nowym filmem</h2>
+    <p>Dodaj tego aktora do filmu, w obsadzie którego jeszcze go nie ma.</p>
+    
+
+    <h2>Udział w filmach</h2>
     <p>Liczba filmów z udziałem <?= $actor['first_name'] ?>: <?= $num_films ?></p>
 
     <ul>

@@ -45,3 +45,7 @@ Kontynuacja z poprzednich zajeć:
   - [x] Później: liczba filmów, w których dany aktor grał, pobrana jednym zapytaniem (wraz z podstawowymi danymi)
 - [x] Na górze strony ze wszystkimi aktorami formularz dodawania nowego aktora: tylko imię i nazwisko (ID nada baza danych automatycznie)
 - [x] Obsługa dodawania aktora
+- [ ] Doddawanie nowego filmu dla aktora
+  - [ ] Napisz zapytanie, które pobierze ID i tytuły filmów, w których dany aktor **nie brał udziału** -- ***zadanie do pomyślenia na następną lekcję***
+  - [ ] Stwórz formularz, a w nim dodaj pole `<select>` z wygenerowanymi `<option>` na podstawie wyników zapytania
+  - [ ] Obsłuż formularz
