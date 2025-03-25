@@ -1,22 +1,23 @@
 <?php
+require_once('db.php');
 
-/*
-- [ ] Sprawdź, czy jest ID - jeśli nie, to ->actors.php
-- [ ] Wyślij zapytanie do bazy danych, które pobierze jednego aktora
-- [ ] Jeśli nie przyszedł tylko jeden aktor z bazy, to ->actors.php
-- [ ] Pobierz dane o aktorze
-- [ ] Chwilowo zakomentuj część o obsadzie, później przerobisz
-- [ ] Wyświetl podstawowe informacje o aktorze w h1: imię i nazwisko
-- [ ] Ogarnij pobranie z bazy danych id i tytułów filmów, w których wyświetlany aktor brał udział
-- [ ] Wyświetl w formie listy `ul`
-*/
+// obsługa dodania aktora do filmu - jeśli wysłano formularz
+if(isset($_POST['film_id'], $_POST['actor_id'])) {
+    $actor_id = $_POST['actor_id'];
+    $film_id = $_POST['film_id'];
 
+    $sql = "INSERT IGNORE INTO film_actor (actor_id, film_id) VALUES ('$actor_id', '$film_id')";
+    $r = mysqli_query($db, $sql);
+
+    header("Location: actor.php?id=$actor_id");
+}
+
+// przygotowanie do wyświetlenia informacji o aktorze
 if (!isset($_GET['id'])) {
     header('Location: actors.php');
     exit(1);
 }
 
-require_once('db.php');
 
 $id = intval($_GET['id']);
 $sql = "SELECT actor_id, first_name, last_name FROM actor WHERE actor_id='$id'";
@@ -34,6 +35,11 @@ $r = mysqli_query($db, $sql);
 $films = mysqli_fetch_all($r, MYSQLI_ASSOC);
 $num_films = mysqli_num_rows($r);
 
+// Pobranie listy filmów, w których aktor NIE grał
+$sql = "SELECT film_id, title FROM film WHERE film_id NOT IN (SELECT film_id FROM film_actor WHERE actor_id='$id')";
+$r = mysqli_query($db, $sql);
+$other_films = mysqli_fetch_all($r, MYSQLI_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -50,6 +56,15 @@ $num_films = mysqli_num_rows($r);
     <h2>Powiązanie z nowym filmem</h2>
     <p>Dodaj tego aktora do filmu, w obsadzie którego jeszcze go nie ma.</p>
     
+    <form action="" method="post">
+        <select name="film_id">
+            <?php foreach($other_films as $film) {
+                echo("<option value='$film[film_id]'>$film[title] (id: $film[film_id])</option>");
+            } ?>
+        </select>
+        <input type="hidden" name="actor_id" value="<?= $id ?>">
+        <button type="submit">Dodaj</button>
+    </form>
 
     <h2>Udział w filmach</h2>
     <p>Liczba filmów z udziałem <?= $actor['first_name'] ?>: <?= $num_films ?></p>

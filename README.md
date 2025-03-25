@@ -66,3 +66,11 @@ Kontynuacja z poprzednich zajeć:
   - [ ] Napisz zapytanie, które pobierze ID i tytuły filmów, w których dany aktor **nie brał udziału** -- **_zadanie do pomyślenia na następną lekcję_**
   - [ ] Stwórz formularz, a w nim dodaj pole `<select>` z wygenerowanymi `<option>` na podstawie wyników zapytania
   - [ ] Obsłuż formularz
+
+## 2025-03-25
+
+- [x] Doddawanie nowego filmu dla aktora
+  - [x] Napisz zapytanie, które pobierze ID i tytuły filmów, w których dany aktor **nie brał udziału** -- **_zadanie do pomyślenia na następną lekcję_**
+  - [x] Stwórz formularz, a w nim dodaj pole `<select>` z wygenerowanymi `<option>` na podstawie wyników zapytania
+  - [x] Obsłuż formularz
+- [ ] Dodawanie nowego aktora do filmu - czyli to samo, ale w drugą stronę -- **zadanie domowe**
