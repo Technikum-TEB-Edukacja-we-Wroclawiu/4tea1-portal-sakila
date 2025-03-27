@@ -74,3 +74,12 @@ Kontynuacja z poprzednich zajeć:
   - [x] Stwórz formularz, a w nim dodaj pole `<select>` z wygenerowanymi `<option>` na podstawie wyników zapytania
   - [x] Obsłuż formularz
 - [ ] Dodawanie nowego aktora do filmu - czyli to samo, ale w drugą stronę -- **zadanie domowe**
+
+## 2025-03-25
+
+- [ ] Zaprojektuj formularz dodawania filmu oraz wszystkich potrzebnych o nim informacji
+  - [ ] Przygotuj np. zapytania pobierające listę kategorii, aby przy dodawaniu filmu można było od razu wskazać, do jakich kategorii film należy (`<select multiple>`)
+  - [ ] Przygotuj możliwość wyboru języka oryginalnego, aby można było wybrać go z listy (`<select>`)
+  - [ ] Sprawdź, jak do PHP dotrze kilka elementów wybranych w polu `<select multiple>` - i jak to obsłużyć
+  - [ ] Rozważ, jak umożliwić użytkownikowi dołączenie aktorów do filmu podczas jego dodawania
+  - [ ] Rozpocznij przygotowywanie skryptu dodającego film oraz dodającego nowo dodany film do zadanych kategorii
