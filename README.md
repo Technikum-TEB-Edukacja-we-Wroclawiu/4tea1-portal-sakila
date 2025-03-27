@@ -75,7 +75,7 @@ Kontynuacja z poprzednich zajeć:
   - [x] Obsłuż formularz
 - [ ] Dodawanie nowego aktora do filmu - czyli to samo, ale w drugą stronę -- **zadanie domowe**
 
-## 2025-03-25
+## 2025-03-27
 
 - [ ] Zaprojektuj formularz dodawania filmu oraz wszystkich potrzebnych o nim informacji
   - [ ] Przygotuj np. zapytania pobierające listę kategorii, aby przy dodawaniu filmu można było od razu wskazać, do jakich kategorii film należy (`<select multiple>`)
@@ -83,3 +83,4 @@ Kontynuacja z poprzednich zajeć:
   - [ ] Sprawdź, jak do PHP dotrze kilka elementów wybranych w polu `<select multiple>` - i jak to obsłużyć
   - [ ] Rozważ, jak umożliwić użytkownikowi dołączenie aktorów do filmu podczas jego dodawania
   - [ ] Rozpocznij przygotowywanie skryptu dodającego film oraz dodającego nowo dodany film do zadanych kategorii
+
