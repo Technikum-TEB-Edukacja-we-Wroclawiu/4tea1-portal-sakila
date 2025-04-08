@@ -11,6 +11,11 @@ include_once('db.php');
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2>Dodawanie nowego filmu</h2>
+    <!-- Dołączam formularz, którego kod jest w innym pliku -->
+    <?php include('form-add-film.php'); ?>
+
+    <h2>Lista filmów</h2>
     <!-- Tabela z informacjami o filmach: ID, tytuł, Czas trwania, pusta kolumna AKCJE -->
     <table>
         <thead>
