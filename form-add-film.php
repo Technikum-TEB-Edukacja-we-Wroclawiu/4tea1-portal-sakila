@@ -18,7 +18,7 @@ $r = mysqli_query($db, $sql);
 $actors = mysqli_fetch_all($r, MYSQLI_BOTH);
 ?>
 
-<form action="" method="post">
+<form action="films.php" method="post">
     <div>
         <label for="title">Tytuł: </label>
         <input type="text" name="title" id="title" reqired>
@@ -68,13 +68,13 @@ $actors = mysqli_fetch_all($r, MYSQLI_BOTH);
         <label for="special_features">Cechy specjalne</label>
         <fieldset id="special_features">
             <?php foreach($special_features as $sf): ?>
-                <input type="checkbox" name="special_features" value="<?= $sf ?>"> <?= $sf ?> <br />
+                <input type="checkbox" name="special_features[]" value="<?= $sf ?>"> <?= $sf ?> <br />
             <?php endforeach; ?>
         </fieldset>
     </div>
     <div>
         <label for="actors">Aktorzy biorący udział w filmie</label>
-        <select name="actors" id="actors" multiple>
+        <select name="actors[]" id="actors" multiple>
             <?php foreach($actors as $a): ?>
                 <option value="<?= $a['actor_id'] ?>"><?= $a['name'] ?></option>
             <?php endforeach; ?>
@@ -82,6 +82,18 @@ $actors = mysqli_fetch_all($r, MYSQLI_BOTH);
     </div>
     <div>
         <label for="categories">Kategorie filmu</label>
+        <select name="categories[]" id="categories" multiple>
+        <?php
+        /*
+        To pobieranie danych do wyświetlenia robimy podstawową techniką - w miejscu, gdzie skrypt ma wyświetlić dane, wysyłam zapytanie, pobieram wyniki i wyświetlam je w pętli while.
+        */
+        $sql = "SELECT category_id, name FROM category ORDER BY name";
+        $r = mysqli_query($db, $sql);
+        while($row = mysqli_fetch_array($r)) {
+            echo "<option value='$row[category_id]'>$row[name]</option>";
+        }
+        ?>
+        </select>
     </div>
     <div>
         <button type="submit">Dodaj</button>

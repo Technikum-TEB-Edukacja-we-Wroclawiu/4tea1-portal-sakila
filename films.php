@@ -1,6 +1,13 @@
 <?php
 include_once('db.php');
 
+if(isset($_POST['title'])) {
+    // Obsługa formularza dodawania filmu
+
+    var_dump($_POST);
+    die();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pl">
